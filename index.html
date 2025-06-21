@@ -13,40 +13,41 @@
     }
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #f7f9fb;
-      color: #333;
+      background-color: #000;
+      color: #fff;
       line-height: 1.6;
       overflow-x: hidden;
     }
     header {
-      background: linear-gradient(135deg, #0077ff, #00c9a7);
+      background: #000;
       color: white;
-      padding: 4rem 2rem 6rem;
+      padding: 4rem 2rem;
       text-align: center;
-      position: relative;
     }
     header img {
-      width: 80px;
+      width: 160px;
       height: auto;
       margin-bottom: 1rem;
+      animation: logoBounce 2s infinite;
     }
     header h1 {
-      font-size: 2.5rem;
-      animation: fadeIn 1s ease-out;
+      font-size: 3rem;
+      animation: fadeInDown 1s ease-out;
     }
     header p {
       font-size: 1.1rem;
       max-width: 600px;
-      margin: 0.5rem auto;
-      animation: fadeIn 2s ease-out;
+      margin: 1rem auto;
+      color: #ccc;
+      animation: fadeInUp 1.5s ease-out;
     }
 
     .section {
-      padding: 3rem 1.5rem;
+      padding: 4rem 1.5rem;
       max-width: 1000px;
       margin: auto;
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(40px);
       transition: all 1s ease;
     }
     .section.visible {
@@ -54,57 +55,69 @@
       transform: translateY(0);
     }
     .section h2 {
-      color: #0077ff;
-      font-size: 2rem;
-      margin-bottom: 1rem;
+      color: #fff;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #00c9a7;
+      display: inline-block;
+      padding-bottom: 0.5rem;
     }
     .section ul {
       list-style: none;
       padding-left: 0;
     }
     .section li {
-      background: white;
+      background: #111;
       border-radius: 12px;
-      padding: 1rem 1.5rem;
+      padding: 1.2rem 1.5rem;
       margin-bottom: 1rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     }
 
     .cta {
       background: #00c9a7;
-      color: white;
+      color: black;
       text-align: center;
-      padding: 3rem 1rem;
+      padding: 4rem 1rem;
     }
     .cta h2 {
-      font-size: 1.8rem;
+      font-size: 2rem;
       margin-bottom: 1rem;
     }
     .cta a {
       display: inline-block;
       margin-top: 1rem;
-      padding: 12px 30px;
+      padding: 14px 32px;
       font-weight: 600;
-      background: white;
+      background: black;
       color: #00c9a7;
-      border-radius: 8px;
+      border-radius: 10px;
       text-decoration: none;
       transition: 0.3s;
     }
     .cta a:hover {
-      background: #f2f2f2;
+      background: #222;
     }
+
     footer {
-      background: #212529;
+      background: #000;
       color: #aaa;
-      padding: 1rem;
+      padding: 2rem 1rem;
       text-align: center;
       font-size: 0.9rem;
     }
 
-    @keyframes fadeIn {
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes logoBounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
 
     @media (max-width: 600px) {
@@ -121,29 +134,29 @@
 
   <header>
     <img src="logo.png" alt="BuildScript Logo" />
-    <h1> BuildScript Technologies</h1>
-    <p>High-performance, scalable, and future-ready software solutions tailored to help your business lead.</p>
+    <h1>BuildScript Technologies</h1>
+    <p>High-performance, scalable, and future-ready digital solutions to drive your business forward.</p>
   </header>
 
   <section class="section" id="services">
     <h2>What We Do</h2>
     <ul>
       <li>✅ Custom Software Development</li>
-      <li>✅ ERP Solutions (Tailored for Manufacturing & SMEs)</li>
-      <li>✅ Mobile App Development (iOS & Android)</li>
-      <li>✅ Web App Development</li>
+      <li>✅ ERP Solutions for Manufacturing & SMEs</li>
+      <li>✅ Mobile & Web App Development</li>
       <li>✅ System Integration & Automation</li>
       <li>✅ Product Design & MVP Development</li>
     </ul>
   </section>
 
-  <section class="section" id="why">
-    <h2>Why Choose Us?</h2>
+  <section class="section features" id="features">
+    <h2>Tech Stack & Capabilities</h2>
     <ul>
-      <li>🔹 Agile, transparent, and client-first approach</li>
-      <li>🔹 Scalable architecture with modern tech stacks</li>
-      <li>🔹 Deep focus on quality, security, and performance</li>
-      <li>🔹 Post-deployment support and long-term partnerships</li>
+      <li>🧠 AI & ML Integration (Python, TensorFlow, OpenAI)</li>
+      <li>🌐 Full-Stack Development (React, Node.js, Next.js)</li>
+      <li>📊 Data Analytics & Visualization (PowerBI, Chart.js)</li>
+      <li>📦 Cloud Deployment (AWS, Azure, Vercel, GitHub Pages)</li>
+      <li>🔒 Secure Auth & APIs (OAuth2, JWT, REST, GraphQL)</li>
     </ul>
   </section>
 
