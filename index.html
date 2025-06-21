@@ -4,69 +4,87 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BuildScript Technologies</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
     body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f8f9fa;
-      color: #212529;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f7f9fb;
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
     }
     header {
       background: linear-gradient(135deg, #0077ff, #00c9a7);
       color: white;
-      padding: 60px 20px;
+      padding: 4rem 2rem 6rem;
       text-align: center;
+      position: relative;
+    }
+    header img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 1rem;
     }
     header h1 {
-      font-size: 2.8rem;
-      margin: 0 0 10px;
+      font-size: 2.5rem;
+      animation: fadeIn 1s ease-out;
     }
     header p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       max-width: 600px;
-      margin: 0 auto;
+      margin: 0.5rem auto;
+      animation: fadeIn 2s ease-out;
     }
+
     .section {
-      padding: 40px 20px;
+      padding: 3rem 1.5rem;
       max-width: 1000px;
       margin: auto;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 1s ease;
+    }
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
     .section h2 {
-      font-size: 2rem;
       color: #0077ff;
-      margin-bottom: 20px;
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
     .section ul {
       list-style: none;
-      padding: 0;
+      padding-left: 0;
     }
-    .section ul li {
+    .section li {
       background: white;
       border-radius: 12px;
-      padding: 16px 20px;
-      margin-bottom: 16px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      font-size: 1.1rem;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
+
     .cta {
       background: #00c9a7;
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 3rem 1rem;
     }
     .cta h2 {
-      margin: 0 0 10px;
       font-size: 1.8rem;
+      margin-bottom: 1rem;
     }
     .cta a {
       display: inline-block;
-      margin-top: 15px;
+      margin-top: 1rem;
       padding: 12px 30px;
-      font-weight: bold;
+      font-weight: 600;
       background: white;
       color: #00c9a7;
       border-radius: 8px;
@@ -79,9 +97,14 @@
     footer {
       background: #212529;
       color: #aaa;
-      padding: 20px;
+      padding: 1rem;
       text-align: center;
       font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     @media (max-width: 600px) {
@@ -97,11 +120,12 @@
 <body>
 
   <header>
-    <h1>🚀 BuildScript Technologies</h1>
+    <img src="logo.png" alt="BuildScript Logo" />
+    <h1>BuildScript Technologies</h1>
     <p>High-performance, scalable, and future-ready software solutions tailored to help your business lead.</p>
   </header>
 
-  <div class="section">
+  <section class="section" id="services">
     <h2>What We Do</h2>
     <ul>
       <li>✅ Custom Software Development</li>
@@ -111,9 +135,9 @@
       <li>✅ System Integration & Automation</li>
       <li>✅ Product Design & MVP Development</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
+  <section class="section" id="why">
     <h2>Why Choose Us?</h2>
     <ul>
       <li>🔹 Agile, transparent, and client-first approach</li>
@@ -121,7 +145,7 @@
       <li>🔹 Deep focus on quality, security, and performance</li>
       <li>🔹 Post-deployment support and long-term partnerships</li>
     </ul>
-  </div>
+  </section>
 
   <div class="cta">
     <h2>Let’s build smart. Let’s build with BuildScript.</h2>
@@ -131,6 +155,19 @@
   <footer>
     &copy; 2025 BuildScript Technologies. All rights reserved.
   </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
 
 </body>
 </html>
