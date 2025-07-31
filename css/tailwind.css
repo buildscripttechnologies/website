@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #000000; /* black - Technical authority and precision */
+  --color-secondary: #FFFFFF; /* white - Clarity and breathing space */
+  --color-accent: #1a1a1a; /* gray-900 - Subtle depth without distraction */
+  
+  /* Background Colors */
+  --color-background: #FFFFFF; /* white - Clean content canvas */
+  --color-surface: #f8f8f8; /* gray-50 - Gentle content separation */
+  
+  /* Text Colors */
+  --color-text-primary: #000000; /* black - Maximum readability for technical content */
+  --color-text-secondary: #666666; /* gray-500 - Clear information hierarchy */
+  
+  /* Status Colors */
+  --color-success: #22c55e; /* green-500 - Positive project outcomes */
+  --color-warning: #f59e0b; /* amber-500 - Important considerations without alarm */
+  --color-error: #ef4444; /* red-500 - Clear problem identification */
+  
+  /* Border Colors */
+  --color-border-light: #e5e5e5; /* gray-200 - Form inputs and content separation */
+  --color-border-emphasis: #000000; /* black - Active states and emphasis */
+  
+  /* Shadow Values */
+  --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+  /* Animation Timing */
+  --transition-fast: 300ms ease-out;
+  --transition-code: 1000ms ease-out;
+}
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-secondary px-6 py-3 font-semibold transition-all duration-300 hover:bg-accent;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent text-primary border border-border-light px-6 py-3 font-semibold transition-all duration-300 hover:bg-surface hover:border-border-emphasis;
+  }
+  
+  .card {
+    @apply bg-secondary border border-border-light rounded-lg p-6 shadow-subtle;
+  }
+  
+  .code-block {
+    @apply bg-surface border border-border-light rounded-lg p-4 font-mono text-sm;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .animation-fade-in {
+    animation: fadeIn var(--transition-fast) ease-out;
+  }
+  
+  .animation-slide-up {
+    animation: slideUp var(--transition-fast) ease-out;
+  }
+  
+  .animation-code-type {
+    animation: typewriter var(--transition-code) ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

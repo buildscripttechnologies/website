@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources - BuildScript Technologies | Technical Insights & Development Resources</title>
+    <meta name="description" content="Access premium technical resources, development insights, and industry expertise from BuildScript Technologies. White papers, guides, and thought leadership content." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fbuildscrip3392back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-primary text-secondary overflow-x-hidden">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-primary/95 backdrop-blur-sm border-b border-gray-800">
+    <div class="container-max">
+        <div class="flex items-center justify-between py-4">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2 group">
+                <img src="../assets/images/icon_bs-1753867611029.png" alt="BuildScript Technologies Logo" class="w-8 h-8 object-contain group-hover:scale-110 transition-transform duration-300" />
+                <span class="text-xl font-bold group-hover:text-gray-300 transition-colors duration-300">BuildScript</span>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="homepage.html" class="text-gray-400 hover:text-secondary transition-colors transform hover:scale-105 transition-transform duration-200">Home</a>
+                <a href="services.html" class="text-gray-400 hover:text-secondary transition-colors transform hover:scale-105 transition-transform duration-200">Services</a>
+                <a href="about.html" class="text-gray-400 hover:text-secondary transition-colors transform hover:scale-105 transition-transform duration-200">About</a>
+                <a href="process.html" class="text-gray-400 hover:text-secondary transition-colors transform hover:scale-105 transition-transform duration-200">Process</a>
+                <a href="resources.html" class="text-secondary hover:text-gray-300 transition-colors font-medium transform hover:scale-105 transition-transform duration-200">Resources</a>
+                <a href="contact.html" class="btn-primary transform hover:scale-105 hover:shadow-lg transition-all duration-300">Start Your Project</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-secondary hover:text-gray-300 transition-colors" id="mobile-menu-btn">
+                <svg class="w-6 h-6 transform hover:rotate-90 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden bg-primary border-t border-gray-800 animate-slide-down" id="mobile-menu">
+        <div class="container-max py-4 space-y-4">
+            <a href="homepage.html" class="block text-gray-400 hover:text-secondary transition-colors hover:translate-x-2 transition-transform duration-200">Home</a>
+            <a href="services.html" class="block text-gray-400 hover:text-secondary transition-colors hover:translate-x-2 transition-transform duration-200">Services</a>
+            <a href="about.html" class="block text-gray-400 hover:text-secondary transition-colors hover:translate-x-2 transition-transform duration-200">About</a>
+            <a href="process.html" class="block text-gray-400 hover:text-secondary transition-colors hover:translate-x-2 transition-transform duration-200">Process</a>
+            <a href="resources.html" class="block text-secondary font-medium hover:translate-x-2 transition-transform duration-200">Resources</a>
+            <a href="contact.html" class="block text-secondary bg-accent px-4 py-2 rounded hover:shadow-lg transform hover:scale-105 transition-all duration-300">Start Your Project</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-20 left-10 font-mono text-sm text-secondary">
+                <div class="typing-animation">// Knowledge Base</div>
+                <div class="typing-animation delay-1000">const insights = {</div>
+                <div class="typing-animation delay-2000 ml-4">architecture: 'scalable',</div>
+                <div class="typing-animation delay-3000 ml-4">practices: 'best'</div>
+                <div class="typing-animation delay-4000">};</div>
+            </div>
+            <div class="absolute top-40 right-20 font-mono text-sm text-secondary">
+                <div class="typing-animation delay-500">export function learn() {</div>
+                <div class="typing-animation delay-1500 ml-4">return expertise;</div>
+                <div class="typing-animation delay-2500">}</div>
+            </div>
+            <div class="absolute bottom-40 left-1/4 font-mono text-sm text-secondary">
+                <div class="typing-animation delay-1000">// Continuous Learning</div>
+                <div class="typing-animation delay-2000">share(knowledge);</div>
+            </div>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="container-max text-center z-10">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Technical Resources
+                    <span class="block text-gray-300">& Industry</span>
+                    <span class="block">Insights</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
+                    Access premium technical content, development insights, and strategic guidance from our team of software architecture experts.
+                </p>
+                
+                <!-- Search Bar -->
+                <div class="max-w-2xl mx-auto mb-12">
+                    <div class="relative">
+                        <input type="text" placeholder="Search technical topics, frameworks, or methodologies..." class="w-full bg-accent text-secondary px-6 py-4 pr-12 rounded-lg border border-gray-700 focus:border-secondary focus:outline-none text-lg" id="resource-search" />
+                        <svg class="absolute right-4 top-1/2 transform -translate-y-1/2 w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Quick Filter Tags -->
+                <div class="flex flex-wrap justify-center gap-3 mb-8">
+                    <button class="filter-tag active" data-filter="all">All Resources</button>
+                    <button class="filter-tag" data-filter="architecture">Architecture</button>
+                    <button class="filter-tag" data-filter="development">Development</button>
+                    <button class="filter-tag" data-filter="devops">DevOps</button>
+                    <button class="filter-tag" data-filter="strategy">Strategy</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Resources -->
+    <section class="section-padding bg-secondary text-primary">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Featured Content</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our most popular and impactful resources for technical leaders and development teams.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Featured White Paper -->
+                <div class="lg:col-span-2">
+                    <div class="card h-full group cursor-pointer hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-primary text-secondary px-3 py-1 rounded-full text-sm font-medium mr-3">White Paper</span>
+                            <span class="text-gray-500 text-sm">25 min read • Advanced</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 group-hover:text-accent transition-colors">
+                            Microservices Architecture: A Strategic Implementation Guide
+                        </h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Comprehensive analysis of microservices adoption strategies, including architectural patterns, 
+                            technology selection criteria, and migration methodologies for enterprise applications.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Technical Author" class="w-10 h-10 rounded-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <div>
+                                    <p class="font-medium">Sarah Chen</p>
+                                    <p class="text-sm text-gray-500">Lead Architect</p>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0)" class="text-primary hover:text-accent transition-colors font-medium flex items-center space-x-1">
+                                <span>Download PDF</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Featured Video -->
+                <div class="space-y-8">
+                    <div class="card group cursor-pointer hover:shadow-lg transition-all duration-300">
+                        <div class="relative mb-4 overflow-hidden rounded-lg">
+                            <img src="https://images.pixabay.com/photos/2016/11/30/20/58/programming-1873854_1280.png" alt="Conference Presentation" class="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-primary bg-opacity-20 flex items-center justify-center">
+                                <svg class="w-12 h-12 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <span class="bg-success text-secondary px-2 py-1 rounded text-xs font-medium mr-2">Webinar</span>
+                            <span class="text-gray-500 text-sm">45 min • Intermediate</span>
+                        </div>
+                        <h3 class="font-bold mb-2 group-hover:text-accent transition-colors">
+                            Cloud-Native Development Strategies
+                        </h3>
+                        <p class="text-gray-600 text-sm">
+                            Live presentation on modern cloud development approaches and containerization best practices.
+                        </p>
+                    </div>
+                    
+                    <!-- Featured Tool -->
+                    <div class="card group cursor-pointer hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-accent text-secondary px-2 py-1 rounded text-xs font-medium mr-2">Open Source</span>
+                            <span class="text-gray-500 text-sm">GitHub Repository</span>
+                        </div>
+                        <h3 class="font-bold mb-2 group-hover:text-accent transition-colors">
+                            API Testing Framework
+                        </h3>
+                        <p class="text-gray-600 text-sm mb-3">
+                            Comprehensive testing suite for REST APIs with automated validation and performance monitoring.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3 text-sm text-gray-500">
+                                <span>⭐ 1.2k</span>
+                                <span>🍴 234</span>
+                                <span>TypeScript</span>
+                            </div>
+                            <a href="javascript:void(0)" class="text-primary hover:text-accent transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Categories -->
+    <section class="section-padding bg-primary text-secondary">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Resource Library</h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Organized by expertise area and audience type for easy discovery of relevant technical content.
+                </p>
+            </div>
+            
+            <!-- Category Tabs -->
+            <div class="flex flex-wrap justify-center mb-12 border-b border-gray-800">
+                <button class="category-tab active" data-category="architecture">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                    </svg>
+                    Architecture
+                </button>
+                <button class="category-tab" data-category="development">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                    </svg>
+                    Development
+                </button>
+                <button class="category-tab" data-category="devops">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                    </svg>
+                    DevOps
+                </button>
+                <button class="category-tab" data-category="strategy">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                    </svg>
+                    Strategy
+                </button>
+            </div>
+            
+            <!-- Architecture Resources -->
+            <div class="category-content active" data-category="architecture">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card group cursor-pointer hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-accent text-secondary px-2 py-1 rounded text-xs font-medium mr-2">Guide</span>
+                            <span class="text-gray-400 text-sm">15 min • Advanced</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 group-hover:text-gray-300 transition-colors">
+                            Scalable System Design Patterns
+                        </h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Essential patterns for building systems that handle millions of users with high availability and performance.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-success text-sm">Updated Jul 2025</span>
+                            <a href="javascript:void(0)" class="text-secondary hover:text-gray-300 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card group cursor-pointer hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-accent text-secondary px-2 py-1 rounded text-xs font-medium mr-2">Checklist</span>
+                            <span class="text-gray-400 text-sm">10 min • Intermediate</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 group-hover:text-gray-300 transition-colors">
+                            API Design Best Practices
+                        </h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Comprehensive checklist for designing RESTful APIs that are maintainable, secure, and developer-friendly.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-success text-sm">Updated Jun 2025</span>
+                            <a href="javascript:void(0)" class="text-secondary hover:text-gray-300 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card group cursor-pointer hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-accent text-secondary px-2 py-1 rounded text-xs font-medium mr-2">Case Study</span>
+                            <span class="text-gray-400 text-sm">20 min • Advanced</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 group-hover:text-gray-300 transition-colors">
+                            Database Sharding Strategy
+                        </h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Real-world implementation of horizontal database scaling for a high-traffic e-commerce platform.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-success text-sm">Updated May 2025</span>
+                            <a href="javascript:void(0)" class="text-secondary hover:text-gray-300 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Development Resources -->
+            <div class="category-content" data-category="development">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card group cursor-pointer hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-accent text-secondary px-2 py-1 rounded text-xs font-medium mr-2">Framework</span>
+                            <span class="text-gray-400 text-sm">30 min • Beginner</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 group-hover:text-gray-300 transition-colors">
+                            Modern React Development Setup
+                        </h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Complete guide to setting up a production-ready React application with TypeScript, testing, and deployment.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-success text-sm">Updated Jul 2025</span>
+                            <a href="javascript:void(0)" class="text-secondary hover:text-gray-300 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card group cursor-pointer hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-accent text-secondary px-2 py-1 rounded text-xs font-medium mr-2">Tutorial</span>
+                            <span class="text-gray-400 text-sm">45 min • Intermediate</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 group-hover:text-gray-300 transition-colors">
+                            Clean Code Principles in Practice
+                        </h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Hands-on examples of writing maintainable, readable code with practical refactoring techniques.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-success text-sm">Updated Jun 2025</span>
+                            <a href="javascript:void(0)" class="text-secondary hover:text-gray-300 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card group cursor-pointer hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-accent text-secondary px-2 py-1 rounded text-xs font-medium mr-2">Tool</span>
+                            <span class="text-gray-400 text-sm">GitHub • Open Source</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 group-hover:text-gray-300 transition-colors">
+                            Code Quality Analyzer
+                        </h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Automated tool for analyzing code quality metrics, complexity, and maintainability across multiple languages.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3 text-sm text-gray-400">
+                                <span>⭐ 892</span>
+                                <span>Python</span>
+                            </div>
+                            <a href="javascript:void(0)" class="text-secondary hover:text-gray-300 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- DevOps Resources -->
+            <div class="category-content" data-category="devops">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card group cursor-pointer hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-accent text-secondary px-2 py-1 rounded text-xs font-medium mr-2">Pipeline</span>
+                            <span class="text-gray-400 text-sm">25 min • Intermediate</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 group-hover:text-gray-300 transition-colors">
+                            CI/CD Pipeline Optimization
+                        </h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Strategies for building fast, reliable deployment pipelines with automated testing and rollback capabilities.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-success text-sm">Updated Jul 2025</span>
+                            <a href="javascript:void(0)" class="text-secondary hover:text-gray-300 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card group cursor-pointer hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-accent text-secondary px-2 py-1 rounded text-xs font-medium mr-2">Infrastructure</span>
+                            <span class="text-gray-400 text-sm">35 min • Advanced</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 group-hover:text-gray-300 transition-colors">
+                            Kubernetes Production Deployment
+                        </h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Complete guide to deploying and managing containerized applications in production Kubernetes clusters.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-success text-sm">Updated Jun 2025</span>
+                            <a href="javascript:void(0)" class="text-secondary hover:text-gray-300 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card group cursor-pointer hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-accent text-secondary px-2 py-1 rounded text-xs font-medium mr-2">Monitoring</span>
+                            <span class="text-gray-400 text-sm">20 min • Intermediate</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 group-hover:text-gray-300 transition-colors">
+                            Application Performance Monitoring
+                        </h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Best practices for monitoring application health, performance metrics, and alerting strategies.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-success text-sm">Updated May 2025</span>
+                            <a href="javascript:void(0)" class="text-secondary hover:text-gray-300 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Strategy Resources -->
+            <div class="category-content" data-category="strategy">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card group cursor-pointer hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-accent text-secondary px-2 py-1 rounded text-xs font-medium mr-2">Analysis</span>
+                            <span class="text-gray-400 text-sm">18 min • Executive</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 group-hover:text-gray-300 transition-colors">
+                            Digital Transformation ROI
+                        </h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Framework for measuring and maximizing return on investment in digital transformation initiatives.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-success text-sm">Updated Jul 2025</span>
+                            <a href="javascript:void(0)" class="text-secondary hover:text-gray-300 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card group cursor-pointer hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-accent text-secondary px-2 py-1 rounded text-xs font-medium mr-2">Planning</span>
+                            <span class="text-gray-400 text-sm">22 min • Manager</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 group-hover:text-gray-300 transition-colors">
+                            Technology Stack Selection
+                        </h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Strategic approach to choosing technologies that align with business goals and team capabilities.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-success text-sm">Updated Jun 2025</span>
+                            <a href="javascript:void(0)" class="text-secondary hover:text-gray-300 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card group cursor-pointer hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-accent text-secondary px-2 py-1 rounded text-xs font-medium mr-2">Roadmap</span>
+                            <span class="text-gray-400 text-sm">28 min • Strategic</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3 group-hover:text-gray-300 transition-colors">
+                            Scaling Engineering Teams
+                        </h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Proven strategies for growing development teams while maintaining code quality and team culture.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-success text-sm">Updated May 2025</span>
+                            <a href="javascript:void(0)" class="text-secondary hover:text-gray-300 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="section-padding bg-secondary text-primary">
+        <div class="container-max">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Stay Updated</h2>
+                <p class="text-xl text-gray-600 mb-12">
+                    Get the latest technical insights, development best practices, and industry analysis delivered to your inbox.
+                </p>
+                
+                <div class="max-w-2xl mx-auto">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <input type="email" placeholder="Enter your email address" class="flex-1 px-6 py-4 border border-gray-300 rounded-lg focus:border-primary focus:outline-none text-lg" />
+                        <button class="bg-primary text-secondary px-8 py-4 font-semibold rounded-lg hover:bg-accent transition-all duration-300 whitespace-nowrap">
+                            Subscribe Now
+                        </button>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4">
+                        Weekly technical insights • No spam • Unsubscribe anytime
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="bg-primary text-secondary section-padding border-t border-gray-800">
+    <div class="container-max">
+        <div class="grid md:grid-cols-4 gap-8 mb-12">
+            <!-- Company Info -->
+            <div class="md:col-span-2">
+                <div class="flex items-center space-x-2 mb-6 group">
+                    <img src="../assets/images/icon_bs-1753867611029.png" alt="BuildScript Technologies Logo" class="w-8 h-8 object-contain group-hover:scale-110 transition-transform duration-300" />
+                    <span class="text-2xl font-bold group-hover:text-gray-300 transition-colors duration-300">BuildScript Technologies</span>
+                </div>
+                <p class="text-gray-400 mb-6 max-w-md">
+                    Premium software development studio where technical excellence meets strategic business thinking. 
+                    Building scalable solutions for ambitious companies.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="javascript:void(0)" class="text-gray-400 hover:text-secondary transition-colors transform hover:scale-110 hover:-translate-y-1 transition-all duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)" class="text-gray-400 hover:text-secondary transition-colors transform hover:scale-110 hover:-translate-y-1 transition-all duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)" class="text-gray-400 hover:text-secondary transition-colors transform hover:scale-110 hover:-translate-y-1 transition-all duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Services</h3>
+                <ul class="space-y-2">
+                    <li><a href="services.html" class="text-gray-400 hover:text-secondary transition-colors hover:translate-x-1 transition-transform duration-200">Custom Software</a></li>
+                    <li><a href="services.html" class="text-gray-400 hover:text-secondary transition-colors hover:translate-x-1 transition-transform duration-200">Web Applications</a></li>
+                    <li><a href="services.html" class="text-gray-400 hover:text-secondary transition-colors hover:translate-x-1 transition-transform duration-200">Cloud Architecture</a></li>
+                    <li><a href="services.html" class="text-gray-400 hover:text-secondary transition-colors hover:translate-x-1 transition-transform duration-200">DevOps Consulting</a></li>
+                </ul>
+            </div>
+            
+            <!-- Company -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Company</h3>
+                <ul class="space-y-2">
+                    <li><a href="about.html" class="text-gray-400 hover:text-secondary transition-colors hover:translate-x-1 transition-transform duration-200">About Us</a></li>
+                    <li><a href="process.html" class="text-gray-400 hover:text-secondary transition-colors hover:translate-x-1 transition-transform duration-200">Our Process</a></li>
+                    <li><a href="resources.html" class="text-gray-400 hover:text-secondary transition-colors hover:translate-x-1 transition-transform duration-200">Resources</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-secondary transition-colors hover:translate-x-1 transition-transform duration-200">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Bottom Bar -->
+        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                © 2025 BuildScript Technologies. All Rights Reserved.
+            </p>
+            <div class="flex space-x-6 text-sm">
+                <a href="javascript:void(0)" class="text-gray-400 hover:text-secondary transition-colors hover:translate-x-1 transition-transform duration-200">Privacy Policy</a>
+                <a href="javascript:void(0)" class="text-gray-400 hover:text-secondary transition-colors hover:translate-x-1 transition-transform duration-200">Terms of Service</a>
+                <a href="javascript:void(0)" class="text-gray-400 hover:text-secondary transition-colors hover:translate-x-1 transition-transform duration-200">Security</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Typing animation for code snippets
+        document.addEventListener('DOMContentLoaded', function() {
+            const typingElements = document.querySelectorAll('.typing-animation');
+            
+            typingElements.forEach((element, index) => {
+                const text = element.textContent;
+                element.textContent = '';
+                element.style.borderRight = '2px solid #fff';
+                element.style.whiteSpace = 'nowrap';
+                element.style.overflow = 'hidden';
+                
+                setTimeout(() => {
+                    let i = 0;
+                    const typeWriter = () => {
+                        if (i < text.length) {
+                            element.textContent += text.charAt(i);
+                            i++;
+                            setTimeout(typeWriter, 50);
+                        } else {
+                            element.style.borderRight = 'none';
+                        }
+                    };
+                    typeWriter();
+                }, index * 1000);
+            });
+        });
+
+        // Filter functionality
+        document.querySelectorAll('.filter-tag').forEach(tag => {
+            tag.addEventListener('click', function() {
+                // Remove active class from all tags
+                document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tag
+                this.classList.add('active');
+                
+                // Filter logic would go here
+                const filter = this.dataset.filter;
+                console.log('Filtering by:', filter);
+            });
+        });
+
+        // Category tabs functionality
+        document.querySelectorAll('.category-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Remove active class from all tabs
+                document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tab
+                this.classList.add('active');
+                
+                // Hide all category content
+                document.querySelectorAll('.category-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Show selected category content
+                const category = this.dataset.category;
+                document.querySelector(`[data-category="${category}"].category-content`).classList.add('active');
+            });
+        });
+
+        // Search functionality
+        document.getElementById('resource-search').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            // Search logic would go here
+            console.log('Searching for:', searchTerm);
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-primary');
+                nav.classList.remove('bg-primary/95');
+            } else {
+                nav.classList.add('bg-primary/95');
+                nav.classList.remove('bg-primary');
+            }
+        });
+    </script>
+
+    <style>
+        .filter-tag {
+            @apply px-4 py-2 rounded-full border border-gray-600 text-gray-400 hover:border-secondary hover:text-secondary transition-all duration-300 cursor-pointer;
+        }
+        
+        .filter-tag.active {
+            @apply bg-secondary text-primary border-secondary;
+        }
+        
+        .category-tab {
+            @apply flex items-center px-6 py-3 text-gray-400 hover:text-secondary transition-colors cursor-pointer border-b-2 border-transparent;
+        }
+        
+        .category-tab.active {
+            @apply text-secondary border-secondary;
+        }
+        
+        .category-content {
+            @apply hidden;
+        }
+        
+        .category-content.active {
+            @apply block;
+        }
+        
+        .typing-animation {
+            @apply inline-block;
+        }
+        
+        .delay-500 {
+            animation-delay: 0.5s;
+        }
+        
+        .delay-1000 {
+            animation-delay: 1s;
+        }
+        
+        .delay-1500 {
+            animation-delay: 1.5s;
+        }
+        
+        .delay-2000 {
+            animation-delay: 2s;
+        }
+        
+        .delay-2500 {
+            animation-delay: 2.5s;
+        }
+        
+        .delay-3000 {
+            animation-delay: 3s;
+        }
+        
+        .delay-3500 {
+            animation-delay: 3.5s;
+        }
+        
+        .delay-4000 {
+            animation-delay: 4s;
+        }
+    </style>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
